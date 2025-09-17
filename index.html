@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Title and Description -->
+  <title>Weryck & Luana</title>
+
+  <style type="text/css">
+    .rfm-marquee-container {
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      width: var(--width);
+      transform: var(--transform);
+    }
+
+    .rfm-marquee-container:hover div {
+      animation-play-state: var(--pause-on-hover);
+    }
+
+    .rfm-marquee-container:active div {
+      animation-play-state: var(--pause-on-click);
+    }
+
+    .rfm-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .rfm-overlay::before,
+    .rfm-overlay::after {
+      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: var(--gradient-width);
+      z-index: 2;
+      pointer-events: none;
+      touch-action: none;
+    }
+
+    .rfm-overlay::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .rfm-overlay::before {
+      left: 0;
+      top: 0;
+    }
+
+    .rfm-marquee {
+      flex: 0 0 auto;
+      min-width: var(--min-width);
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+      animation-play-state: var(--play);
+      animation-delay: var(--delay);
+      animation-direction: var(--direction);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .rfm-initial-child-container {
+      flex: 0 0 auto;
+      display: flex;
+      min-width: auto;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .rfm-child {
+      transform: var(--transform);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div id="root">
+    <div style="opacity: 1; will-change: transform; transform: none;">
+      <div class="_hero_qnu0y_1 " style="position: relative; width: 100%;">
+        <div class="layer-0"></div>
+        <div class="layer-1">
+          <div class="_contentContainer_qnu0y_14">
+            <span>24. 01. 2026</span>
+            <h1>Weryck & Luana</h1>
+          </div>
+        </div>
+        <div class="layer-2 "></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="_countdownSection_1akl3_1">
+    <!-- <img
+      src="https://ik.imagekit.io/aamabilly/Ju-Pedrosa/bg-countdown.png" alt="Background"
+      class="_background_1akl3_19" style="opacity: 1; transform: none; will-change: transform;"> -->
+    <div>
+      <p style="text-align: left; font-size: 1.5rem; color: black; letter-spacing: 0.2em; font-weight: 300;">FALTAM</P>
+      <div class="_content_1akl3_30"
+        style="transition: 2000ms cubic-bezier(0.03, 0.98, 0.52, 0.99); transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);">
+
+        <div class="_timeUnit_1akl3_39" style="opacity: 1; transform: none; will-change: transform;">
+          <h1>00</h1><span>MESES</span>
+        </div>
+        <div class="_timeUnit_1akl3_39" style="opacity: 1; transform: none; will-change: transform;">
+          <h1>00</h1><span>DIAS</span>
+        </div>
+        <div class="_timeUnit_1akl3_39" style="opacity: 1; transform: none; will-change: transform;">
+          <h1>00</h1><span>HORAS</span>
+        </div>
+        <div class="_timeUnit_1akl3_39" style="opacity: 1; transform: none; will-change: transform;">
+          <h1>00</h1><span>MINUTOS</span>
+        </div>
+        <div class="_timeUnit_1akl3_39" style="opacity: 1; transform: none; will-change: transform;">
+          <h1>00</h1><span>SEGUNDOS</span>
+        </div>
+      </div>
+      <p style="text-align: right; font-size: 1.5rem; color: black; letter-spacing: 0.2em; font-weight: 300;">PARA O
+        GRANDE DIA...</p>
+    </div>
+
+  </section>
+
+  <div class="marquee">
+    <span>
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>
+
+  </div>
+
+  <section class="letterSection">
+    <div>
+      <h1>
+        Queridos amigos e familiares,
+      </h1>
+      <p>O casamento é um presente de Deus, um sinal de amor, união e companheirismo. Desde a criação, Ele nos ensinou
+        que duas vidas se tornam uma só quando caminhamos lado a lado, sustentados pelo cuidado, respeito e fidelidade.
+      </p>
+      <p>Para nós, o matrimônio é mais do que uma aliança entre duas pessoas; é um reflexo do amor de Cristo pela sua
+        igreja, um compromisso que ultrapassa o tempo e se firma na eternidade. Como diz a Bíblia:</p>
+      <p style="font-style: italic;">"Assim, eles já não são dois, mas sim uma só carne. Portanto, o que Deus uniu, ninguém o separe." (Mateus 19:6)
+      </p>
+      <p>É com essa verdade em nossos corações que decidimos dar este passo em nossa vida juntos. E não poderíamos
+        imaginar fazê-lo sem a presença de vocês, que são parte tão importante da nossa história.</p>
+      <p>Criamos este site como um espaço para compartilhar todas as informações importantes sobre o nosso casamento, para que vocês possam se organizar e acompanhar cada detalhe. Esperamos que ele seja útil e que se sintam ainda mais próximos de nós nesse momento tão especial.</p>
+      <p>Desejamos compartilhar este dia de amor e alegria, contando com cada um de vocês para testemunhar a fidelidade de Deus em nossa união.</p>
+      <p style="margin-bottom: 0;">Com carinho,</p>
+      <p class="letter_names">Weryck e Luana</p>
+
+      
+    </div>
+    <img src="Imagens/oliveira.png" style="max-width: 500px;" alt="">
+    <!-- <div class="_quoteContainer_1akl3_64 _quoteAnimation_1akl3_77">
+      <div class="_quoteMask_1akl3_77 _line2_1akl3_104"></div>
+      <div class="_quoteMask_1akl3_77 _line3_1akl3_112"></div>
+      <div class="_quoteMask_1akl3_77 _line4_1akl3_119"></div>
+    </div> -->
+  </section>
+
+  <section class="_verseSection_1akl3_1">
+    <video autoplay muted loop playsinline class="_background_1akl3_19 "
+      style="opacity: 1; transform: none; will-change: transform;">
+      <source src="Videos/noivado.MOV" type="video/mp4">
+    </video>
+  </section>
+
+  <section class="saveTheDateSection">
+    <div>
+      <h1 class="saveTheDate_title">
+        Save <br /> the <br /> Date
+      </h1>
+      <h1 class="saveTheDate_title_smartphone">
+        Save the Date
+      </h1>
+    </div>
+    <div class="saveTheDate_infos">
+
+      <h2>Sábado | 24 de Janeiro de 2026 | 10h</h2>
+      <p>RECANTO FERRAZ</p>
+      <p>Rua Seis de Janeiro, 470 - Pedro Leme - Roseira</p>
+      <a href="https://maps.app.goo.gl/7ecK5n93EWVRHDLp8" target="_blank" 
+      style="text-transform: uppercase; font-size: 10px; color: #000; text-decoration-color:#000; padding-bottom: 15px;">
+        <img src="Imagens/mapa.png" style="max-width: 500px;" alt="">
+        <p >Clique aqui e descubra o caminho até a festa!</p>
+      </a>
+ 
+    </div>
+      
+  </section>
+  <section class="saveTheDateSection" style="padding-bottom: 2em; flex-direction: column; align-content: center;
+    flex-wrap: wrap;">
+    <p>Por favor, confirme sua presença até o dia <b>05/01</b> pelo whatsapp (12) 99652-3100</p>
+    <a href="https://contate.me/5512996523100" target="_blank" class="btn_gift">
+      Confirme Sua Presença
+    </a>
+  </section>
+
+  <section class="verseSection">
+    <h1>O amor tudo sofre, 
+      tudo crê, 
+      tudo espera, 
+      tudo suporta.
+      <br/> O amor jamais acaba. </h1>
+      <h4>1 Coríntios 13:7-8</h4>
+  </section>
+
+  <section class="giftSection">
+    <div class="pix">
+      <p>Sua presença é o melhor <span>presente...</span></p>
+      <p class="gift_pix_text">...mas também aceitamos pix</p>
+
+      <img src="Imagens/pix.png" alt="" style="max-width: 200px; margin: 0 auto; display: block;">
+      <p class="chave_pix_text">Chave PIX: 474.916.238-83</p>
+      <p class="chave_pix_text">Nome: Luana Rufino Diniz Ferraz</p>
+    </div>
+    <div class="lista-presentes">
+      <p>O maior presente que poderíamos receber é a presença de cada um de vocês nesse dia tão especial</p>
+      <p>Para quem desejar nos abençoar de maneira material, deixamos algumas opções: vocês podem <b>contribuir via Pix</b>, <b>escolher um presente em nossa lista online no Magazine Luiza</b> ou <b>entregar pessoalmente no dia do casamento</b>.</p>
+      <p>Cada gesto de carinho será recebido com gratidão e fará parte da nossa história, ajudando a tornar nosso lar ainda mais cheio de amor e alegria.</p>
+      <a href="https://www.finalfeliz.de/luana-e-weryck" target="_blank" class="btn_gift">
+        Ver lista de Presentes
+      </a>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Weryck & Luana</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>

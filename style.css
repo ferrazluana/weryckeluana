@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'New Icon Script';
+    src: url('Font/New-Icon-Script.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+
+._hero_qnu0y_1 {
+    height: 100vh;
+    width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: InstrumentSerif, serif;
+    position: relative;
+    z-index: 0;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+.layer-0 {
+    background-image: url(Imagens/banner-layer-0.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    inset: 0px;
+}
+
+.layer-1 {
+    position: absolute;
+    will-change: transform;
+}
+
+.layer-2 {
+    background-image: url(Imagens/banner-layer-2.png);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    inset: 0px;
+    will-change: transform;
+}
+
+._contentContainer_qnu0y_14 {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+._hero_qnu0y_1 span {
+    font-weight: 400;
+    font-size: 26px;
+    position: relative;
+    letter-spacing: .05em;
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+._hero_qnu0y_1 h1 {
+    font-weight: 400;
+    font-size: 90px;
+    letter-spacing: .02em;
+    position: relative;
+    margin: 0;
+    font-family: 'New Icon Script', sans-serif;
+    margin: 20px 0;
+    animation: fadeIn 2.5s ease-out forwards;
+    opacity: 0;
+}
+
+._countdownSection_1akl3_1,
+.saveTheDateSection,
+.letterSection,
+.giftSection {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* max-height: 65vw; */
+    background: url(https://ik.imagekit.io/aamabilly/Ju-Pedrosa/bg-textura_contagem.jpg?updatedAt=1728247083493) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+._verseSection_1akl3_1 {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    /* max-height: 65vw; */
+    background: url(https://ik.imagekit.io/aamabilly/Ju-Pedrosa/bg-textura_contagem.jpg?updatedAt=1728247083493) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+    ._background_1akl3_19 {
+        bottom: -130px;
+    }
+}
+
+._background_1akl3_19 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+
+
+._quoteContainer_1akl3_64 {
+    position: absolute;
+    right: -141px;
+    top: 50%;
+    transform: translateY(-53%);
+    width: 614px;
+    height: 62vh;
+    overflow: hidden;
+    z-index: 3;
+}
+
+._quoteAnimation_1akl3_77 ._quoteMask_1akl3_77 {
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background-image: url(Imagens/escrita1-contagem.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 500%;
+    clip-path: inset(0 100% 0 0);
+    animation-name: _revealLine_1akl3_1;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0
+}
+
+
+
+._line2_1akl3_104 {
+    top: 30%;
+    background-position: 0 0;
+    animation-delay: .35s
+}
+
+._line3_1akl3_112 {
+    top: 35%;
+    background-position: 0 22%;
+    animation-delay: .9s
+}
+
+._line4_1akl3_119 {
+    top: 41%;
+    background-position: 0 45%;
+    animation-delay: 1.4s
+}
+
+
+@keyframes _revealLine_1akl3_1 {
+    0% {
+        clip-path: inset(0 100% 0 0);
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        clip-path: inset(0 0 0 0);
+        opacity: 1
+    }
+}
+
+._content_1akl3_30 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+    color: #CAB096;
+}
+
+._timeUnit_1akl3_39 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    color: #fff;
+    position: relative;
+}
+
+._timeUnit_1akl3_39:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #000;
+    opacity: 0.5;
+}
+
+._timeUnit_1akl3_39 h1 {
+    flex-wrap: wrap;
+    font-family: freight-big-pro, serif;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    justify-content: center;
+    position: relative;
+    color: #000;
+
+    margin: 0;
+}
+
+._timeUnit_1akl3_39 span {
+    font-size: 16px;
+    margin-top: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000;
+    font-weight: 300;
+}
+
+
+.marquee {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px 0;
+    background-color: #becd96;
+}
+
+.marquee span {
+    display: inline-block;
+    /* padding-left: 100%;  */
+    animation: marquee 100s linear infinite;
+    font-size: .8rem;
+    /* padding: 5px 15px; */
+    color: #000;
+    /* font-size: 12px; */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.saveTheDate_title {
+    font-size: 8em;
+    font-weight: 300;
+    font-family: 'New Icon Script', sans-serif;
+    color: #000;
+    margin: .5em 1em;
+}
+
+.saveTheDate_title_smartphone{
+    display: none;
+    font-size: 5rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'New Icon Script', sans-serif;
+    color: #000;
+}
+
+.saveTheDate_infos {
+    font-weight: 300;
+    letter-spacing: 0.2em;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    align-self: center;
+}
+
+.saveTheDate_infos p {
+    margin-bottom: 0;
+}
+
+.saveTheDate_infos img {
+    max-width: 500px;
+    display: block;
+    margin: 15px auto;
+
+}
+
+.letterSection div {
+    max-width: 50%;
+    margin: 5em 4em;
+    text-align: left;
+    z-index: 2;
+}
+
+.letterSection div h1 {
+    font-family: 'New Icon Script', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+}
+
+.letterSection div p {
+    letter-spacing: 0.5px;
+    text-align: justify;
+}
+
+.letter_names {
+    font-family: 'New Icon Script', sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.letterSection img{
+    position: absolute;
+    bottom: -47px;
+    right: -95px;
+    max-width: 500px;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+}
+
+.verseSection {
+    background-image: url(Imagens/banner-oliveira.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    inset: 0px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding: 1em;
+
+    font-family: 'New Icon Script', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.giftSection .pix{
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: left;
+    margin: 1em 3em;
+    flex: 1;
+}
+
+.giftSection .gift_pix_text{
+    font-family: 'New Icon Script', sans-serif;
+    text-align: right;
+}
+
+.chave_pix_text{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.giftSection .lista-presentes{
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    margin: 3em;
+    flex: 1;
+    align-self: center;
+}
+
+.lista-presentes p:last-of-type {
+    padding-bottom: 2em;
+}
+
+.btn_gift{
+    font-family: 'New Icon Script', sans-serif;
+    text-decoration: none;
+    padding: 1em;
+    border: #000 1px solid;
+    border-radius: 35px;
+    color: #000;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.saveTheDateSection .btn_gift{
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+
+.btn_gift:hover{
+    color: linear-gradient(to bottom, #f7e394, #c9a964);;
+}
+
+footer{
+    background-color: #1A1E19;
+    color: #fff;
+    text-align: center;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'New Icon Script', sans-serif;
+}
+
+@media (max-width: 768px) {
+    ._content_1akl3_30 {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    ._timeUnit_1akl3_39 h1 {
+        font-size: 2.5rem;
+    }
+
+    ._timeUnit_1akl3_39 span {
+        font-size: 0.8rem;
+    }
+
+    ._timeUnit_1akl3_39::after {
+        display: none;
+    }
+
+    ._countdownSection_1akl3_1 div p {
+        text-align: center !important;
+        margin: 10px;
+    }
+
+
+    ._hero_qnu0y_1 h1 {
+        font-size: 2rem;
+    }
+
+    ._quoteContainer_1akl3_64 {
+        display: none;
+    }
+
+    ._quoteAnimation_1akl3_77 ._quoteMask_1akl3_77 {
+        height: 26%;
+    }
+
+    ._line3_1akl3_112 {
+        top: 42%;
+    }
+
+    ._line4_1akl3_119 {
+        top: 58%;
+    }
+
+    .letterSection div {
+        max-width: 100%;
+        margin: 1em 4em;
+        text-align: center;
+    }
+
+    .saveTheDateSection{
+        flex-direction: column;
+    }
+
+    .saveTheDate_title_smartphone{
+        display: block;
+    }
+    .saveTheDate_title{
+        display: none;
+    }
+
+    .saveTheDate_infos img{
+        max-width: 95%!important;
+        margin: 10px auto;
+    }
+
+    .letterSection img{
+        opacity: 0.5;
+    }
+
+}
