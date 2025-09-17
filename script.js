@@ -50,3 +50,26 @@ const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
+// Adiciona rolagem suave para os links do menu
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        let targetElement;
+        
+        if (targetId.startsWith('#')) {
+            targetElement = document.querySelector(targetId);
+        } else if (targetId.startsWith('.')) {
+            targetElement = document.querySelector(targetId);
+        }
+
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+

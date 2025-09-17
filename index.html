@@ -14,93 +14,21 @@
   <!-- Title and Description -->
   <title>Weryck & Luana</title>
 
-  <style type="text/css">
-    .rfm-marquee-container {
-      overflow-x: hidden;
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      width: var(--width);
-      transform: var(--transform);
-    }
-
-    .rfm-marquee-container:hover div {
-      animation-play-state: var(--pause-on-hover);
-    }
-
-    .rfm-marquee-container:active div {
-      animation-play-state: var(--pause-on-click);
-    }
-
-    .rfm-overlay {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-
-    .rfm-overlay::before,
-    .rfm-overlay::after {
-      background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
-      content: "";
-      height: 100%;
-      position: absolute;
-      width: var(--gradient-width);
-      z-index: 2;
-      pointer-events: none;
-      touch-action: none;
-    }
-
-    .rfm-overlay::after {
-      right: 0;
-      top: 0;
-      transform: rotateZ(180deg);
-    }
-
-    .rfm-overlay::before {
-      left: 0;
-      top: 0;
-    }
-
-    .rfm-marquee {
-      flex: 0 0 auto;
-      min-width: var(--min-width);
-      z-index: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
-      animation-play-state: var(--play);
-      animation-delay: var(--delay);
-      animation-direction: var(--direction);
-    }
-
-    @keyframes scroll {
-      0% {
-        transform: translateX(0%);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    .rfm-initial-child-container {
-      flex: 0 0 auto;
-      display: flex;
-      min-width: auto;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .rfm-child {
-      transform: var(--transform);
-    }
-  </style>
-
-
 </head>
 
 <body>
+  <header class="main-header">
+    <nav class="nav-container">
+      <div class="logo">W&L</div>
+      <ul class="nav-menu">
+        <li><a href="#root">Início</a></li>
+        <li><a href="#letterSection">Nossa História</a></li>
+        <li><a href="#saveTheDateSection">Cerimonia</a></li>
+        <li><a href="#giftSection">Lista de Presentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div id="root">
     <div style="opacity: 1; will-change: transform; transform: none;">
       <div class="_hero_qnu0y_1 " style="position: relative; width: 100%;">
@@ -117,9 +45,7 @@
   </div>
 
   <section class="_countdownSection_1akl3_1">
-    <!-- <img
-      src="https://ik.imagekit.io/aamabilly/Ju-Pedrosa/bg-countdown.png" alt="Background"
-      class="_background_1akl3_19" style="opacity: 1; transform: none; will-change: transform;"> -->
+    <!-- <img src="Imagens/oliveira.png" style="max-width: 500px;" alt="">  -->
     <div>
       <p style="text-align: left; font-size: 1.5rem; color: black; letter-spacing: 0.2em; font-weight: 300;">FALTAM</P>
       <div class="_content_1akl3_30"
@@ -147,52 +73,6 @@
 
   </section>
 
-  <div class="marquee">
-    <span>
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      Weryck & Luana &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 24.01.2026
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </span>
-
-  </div>
-
   <section class="letterSection">
     <div>
       <h1>
@@ -215,21 +95,18 @@
       
     </div>
     <img src="Imagens/oliveira.png" style="max-width: 500px;" alt="">
-    <!-- <div class="_quoteContainer_1akl3_64 _quoteAnimation_1akl3_77">
-      <div class="_quoteMask_1akl3_77 _line2_1akl3_104"></div>
-      <div class="_quoteMask_1akl3_77 _line3_1akl3_112"></div>
-      <div class="_quoteMask_1akl3_77 _line4_1akl3_119"></div>
-    </div> -->
   </section>
 
-  <section class="_verseSection_1akl3_1">
-    <video autoplay muted loop playsinline class="_background_1akl3_19 "
-      style="opacity: 1; transform: none; will-change: transform;">
-      <source src="Videos/noivado-video.mp4" type="video/mp4">
-    </video>
+  <section class="verseSection_2">
+    <h1>O amor tudo sofre, 
+      tudo crê, 
+      tudo espera, 
+      tudo suporta.
+      <br/> O amor jamais acaba. </h1>
+      <h4>1 Coríntios 13:7-8</h4>
   </section>
 
-  <section class="saveTheDateSection">
+  <section class="saveTheDateSection" id="saveTheDateSection">
     <div>
       <h1 class="saveTheDate_title">
         Save <br /> the <br /> Date
@@ -252,7 +129,7 @@
     </div>
       
   </section>
-  <section class="saveTheDateSection" style="padding-bottom: 2em; flex-direction: column; align-content: center;
+  <section class="saveTheDateSection"  style="padding-bottom: 2em; flex-direction: column; align-content: center;
     flex-wrap: wrap;">
     <p>Por favor, confirme sua presença até o dia <b>05/01</b> pelo whatsapp (12) 99652-3100</p>
     <a href="https://contate.me/5512996523100" target="_blank" class="btn_gift">
@@ -261,15 +138,11 @@
   </section>
 
   <section class="verseSection">
-    <h1>O amor tudo sofre, 
-      tudo crê, 
-      tudo espera, 
-      tudo suporta.
-      <br/> O amor jamais acaba. </h1>
-      <h4>1 Coríntios 13:7-8</h4>
+    <h1>Eu, porém, sou como uma oliveira que floresce na casa de Deus; <br/> confio no amor de Deus para todo o sempre</h1>
+      <h4>Salmos 52:8</h4>
   </section>
 
-  <section class="giftSection">
+  <section class="giftSection" id="giftSection">
     <div class="pix">
       <p>Sua presença é o melhor <span>presente...</span></p>
       <p class="gift_pix_text">...mas também aceitamos pix</p>

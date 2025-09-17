@@ -10,14 +10,14 @@ html {
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    color: #000;
+    color: #1A1E19;
 }
 
 
 ._hero_qnu0y_1 {
     height: 100vh;
     width: 100%;
-    color: #000;
+    color: #1A1E19;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -241,7 +241,7 @@ html {
     top: 50%;
     transform: translateY(-50%);
     font-size: 3rem;
-    color: #000;
+    color: #1A1E19;
     opacity: 0.5;
 }
 
@@ -256,7 +256,7 @@ html {
     letter-spacing: 4px;
     justify-content: center;
     position: relative;
-    color: #000;
+    color: #1A1E19;
 
     margin: 0;
 }
@@ -266,30 +266,10 @@ html {
     margin-top: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    color: #000;
+    color: #1A1E19;
     font-weight: 300;
 }
 
-
-.marquee {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    box-sizing: border-box;
-    padding: 10px 0;
-    background-color: #becd96;
-}
-
-.marquee span {
-    display: inline-block;
-    /* padding-left: 100%;  */
-    animation: marquee 100s linear infinite;
-    font-size: .8rem;
-    /* padding: 5px 15px; */
-    color: #000;
-    /* font-size: 12px; */
-}
 
 @keyframes marquee {
     0% {
@@ -305,7 +285,7 @@ html {
     font-size: 8em;
     font-weight: 300;
     font-family: 'New Icon Script', sans-serif;
-    color: #000;
+    color: #1A1E19;
     margin: .5em 1em;
 }
 
@@ -316,7 +296,7 @@ html {
     text-align: center;
     font-weight: 300;
     font-family: 'New Icon Script', sans-serif;
-    color: #000;
+    color: #1A1E19;
 }
 
 .saveTheDate_infos {
@@ -375,6 +355,7 @@ html {
     opacity: 1;
 }
 
+
 .verseSection {
     background-image: url(Imagens/banner-oliveira.jpg);
     background-attachment: fixed;
@@ -388,12 +369,38 @@ html {
     flex-direction: column;
     justify-content: center;
     color: #fff;
+    font-weight: 100!important;
     padding: 1em;
-
     font-family: 'New Icon Script', sans-serif;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     text-align: center;
 }
+
+.verseSection_2{
+    background-image: url(Imagens/banner-oliveira-2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    inset: 0px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #E6E4E2;
+    font-weight: 100!important;
+    padding: 1em;
+    font-family: 'New Icon Script', sans-serif;
+    /* font-size: 1.5em; */
+    text-align: center;
+}
+
+.verseSection_2 h1, .verseSection_2 h4, .verseSection h1, .verseSection h4{
+    font-weight: 100!important;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
 
 .giftSection .pix{
     letter-spacing: 0.5px;
@@ -430,9 +437,9 @@ html {
     font-family: 'New Icon Script', sans-serif;
     text-decoration: none;
     padding: 1em;
-    border: #000 1px solid;
+    border: #1A1E19 1px solid;
     border-radius: 35px;
-    color: #000;
+    color: #1A1E19;
     font-size: 1.3rem;
     transition: all 0.3s ease;
 }
@@ -528,4 +535,72 @@ footer{
         opacity: 0.5;
     }
 
+    .giftSection{
+        flex-direction: column;
+    }
+
+    .giftSection .lista-presentes, .giftSection .pix{
+        margin: 10px 1em;
+    }
+
+}
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  /* backdrop-filter: blur(10px); */
+  z-index: 1000;
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+  text-transform: uppercase;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1A1E19;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  color: #1A1E19;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    text-transform: capitalize;
+  font-family: 'New Icon Script', sans-serif;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 1rem;
+  }
+
+  .nav-menu {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
 }
