@@ -551,6 +551,9 @@ footer{
         width: 50%;
     }
 
+    .verseSection, .verseSection_2{
+        background-attachment: scroll;
+    }
 }
 .main-header {
   position: absolute;
