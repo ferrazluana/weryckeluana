@@ -547,6 +547,10 @@ footer{
         margin: 10px 1em;
     }
 
+    .saveTheDateSection .btn_gift{
+        width: 50%;
+    }
+
 }
 .main-header {
   position: absolute;
