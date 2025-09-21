@@ -41,6 +41,7 @@ html {
 .layer-1 {
     position: absolute;
     will-change: transform;
+    top: 38%;
 }
 
 .layer-2 {
@@ -88,11 +89,10 @@ html {
 ._hero_qnu0y_1 h1 {
     font-weight: 400;
     font-size: 90px;
-    letter-spacing: .02em;
     position: relative;
     margin: 0;
     font-family: 'New Icon Script', sans-serif;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     animation: fadeIn 2.5s ease-out forwards;
     opacity: 0;
 }
@@ -344,6 +344,7 @@ html {
     font-family: 'New Icon Script', sans-serif;
     font-size: 1.5em;
     margin: 0;
+    text-align: right!important;
 }
 
 .letterSection img{
