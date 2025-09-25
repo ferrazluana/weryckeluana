@@ -23,7 +23,7 @@ window.addEventListener('scroll', function() {
 
 
 function updateCountdown() {
-    const weddingDate = new Date('2026-01-24T10:00:00').getTime();
+    const weddingDate = new Date('2026-01-25T10:00:00').getTime();
     const now = new Date().getTime();
     const distance = weddingDate - now;
 
